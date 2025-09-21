@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar Example</title>
+<style>
+  /* Reset default margins */
+  body, html {
+    margin: 0;
+    height: 100%;
+  }
+
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;      /* Stays fixed while scrolling */
+    top: 0;
+    left: 0;
+    width: 15%;           /* 15% of the viewport width */
+    height: 100vh;        /* Full viewport height */
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+
+  /* Main content next to sidebar */
+  .main-content {
+    margin-left: 15%;     /* Push content to the right of sidebar */
+    padding: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>Sidebar</h2>
+  <p>Navigation links here</p>
+</div>
+
+<div class="main-content">
+  <h1>Main Area</h1>
+  <p>Your page content goes here.</p>
+</div>
+
+</body>
+</html>

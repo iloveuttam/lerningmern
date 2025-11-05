@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Set</title>
+    <style>
+       .pgcontainer{
+        height: 25px;
+        width: 90%;
+        background-color: antiquewhite;
+        border: 3px solid black;
+        border-radius: 20px;
+        position: relative;
+        left :4%;
+       }
+       .pgbar{
+        height: 100%;
+        background-color: hotpink;
+        border-radius: 20px;
+        animation: anm_pgbar 4s;
+       }
+       @keyframes anm_pgbar {
+        0%{width:0%}
+        90%{width:95%}
+        95%{width: 80%;}
+        100%{width: 100%;}
+        
+       }
+    </style>
+</head>
+<body>
+      <div class="pgcontainer">
+        <div class="pgbar"></div>
+      </div>
+</body>
+</html>

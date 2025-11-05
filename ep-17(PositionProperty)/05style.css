@@ -1,0 +1,46 @@
+*{
+    margin:0; 
+    padding: 0 ;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 15%;
+    font-weight: 600;
+}
+header{
+    height: 50px;
+    background-color: aquamarine;
+    padding-top: 20px;
+}
+#ilu{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    
+    border-radius: 50%;
+}
+.hlu{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid rgb(229, 120, 140);
+}
+#container{
+    border: 5px solid;
+    margin-top: 10px;
+}
+#box1{
+    position: fixed;
+    right: 10px;
+}
+#box2{
+    z-index: 2;
+    position: absolute;
+    margin-left: 20px;
+}
+footer{
+    background-color: rgb(246, 219, 219);
+    position: fixed;
+    bottom: 0px;
+}

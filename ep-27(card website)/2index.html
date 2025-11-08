@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+        .box{
+            height: 65vh;
+            width: 25vw;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #mcfood{
+            width: 25vw;
+            height: 150px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .items{
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #payment{
+            height: 45px;
+            width: 20vw;
+            background-color: rgb(13, 13, 60);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+        }
+        .charge{
+             height: 48px;
+            width: 20vw;
+            background-color: rgb(193, 224, 246);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+        }
+        .charge img{
+            height: 30px;
+            border-radius: 10px;
+        }
+        .logo{
+            display: flex;
+            width: 8vw;
+            justify-content: space-between;
+        }
+        #summary{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .sum{
+            width: 18vw;
+            display: flex;
+            align-items: center;
+
+        }
+     </style>
+</head>
+<body>
+     <div class="container">
+         <div class="box">
+            <img id="mcfood" src="Mcdonalds-Food-Ad.jpg" alt="">
+            <div class="items">
+                 <h2>Order Summary</h2>
+                  <div class="sum">
+                    <p id="Summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a rerum illo non animi vel sit laboriosam omnis asperiores itaque?.</p>
+                  </div>
+                 <div class="charge">
+                    <div class="logo"><img src="music-logo-design-vector-22618488.avif" alt="">
+                    <p>Anual plan <br>$99.99/year</p></div>
+                    
+                    <a href="#">change</a>
+                 </div>
+                 <p id="payment">Proceed to payment</p>
+                 <h4>Cancel Order</h4>
+            </div>
+         </div>
+     </div>
+</body>
+</html>

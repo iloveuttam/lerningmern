@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            padding: 5rem;
+
+        }
+        .items{
+            border: 3px solid white;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(166, 107, 20);
+            padding: 2rem;
+        }
+        #rotatex:hover{
+            transform: rotateX(30deg);
+
+        }
+        #rotatez:hover{
+            transform: rotate(30deg);
+        }
+        #translatez:hover{
+            transform: perspective(30px) translate(30px);
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+         <div class="items" id="rotatex">RotateX</div>
+         <div class="items" id="rotatey">RotateY</div>
+         <div class="items" id="rotatez">RotateZ</div>
+         <div class="items" id="translatex">TranslateX</div>
+         <div class="items" id="translatey">TranslateY</div>
+         <div class="items" id="translatez">TranslateZ</div>
+         <div class="items" id="Scalex">ScaleX</div>
+         <div class="items" id="Scaley">ScaleY</div>
+         <div class="items" id="Scalez">ScaleZ</div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(105, 97, 97);
+            /* grid-template-columns: repeat(3 ,1fr); */
+            grid-template-columns: repeat(auto-fit,minmax(200px,500px));
+            justify-content: center;
+        }
+        .items{
+            padding: 1rem;
+            color: white;
+            border: 5px solid black;
+            background-color: rgb(109, 109, 205);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+      <div class="items">E</div>
+      <div class="items">F</div>
+      <div class="items">G</div>
+      <div class="items">H</div>
+      <div class="items">I</div>
+      <div class="items">J</div>
+      <div class="items">K</div>
+      <div class="items">L</div>
+      <div class="items">M</div>
+      <div class="items">N</div>
+      <div class="items">O</div>
+      <div class="items">P</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+
+}
+#navbar{
+    
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define custom colors using the --color- prefix */
+  --color-deepBlue: #02042a;
+  --color-lightBlue: #2b84ea;
+  --color-LightBlue300: #4b94ed;
+  --color-lightBlue500: #0b72e7;
+  --color-greenLight: #61cea6;
+  --color-grayText: #818597;
+  --color-lightGray: #e2e2e2;
+  --color-grayBlue: #344a6c;
+  --color-deepBlueHead: #162f56;
+  --color-gray2: #525a76;
+
+  /* Define a custom font family using the --font- prefix */
+  --font-mullish: "Mulish", sans-serif;
+}

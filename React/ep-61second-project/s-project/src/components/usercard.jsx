@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import React from 'react'
 import uk from '../assets/download.jpg'
 import "./usercard.css"

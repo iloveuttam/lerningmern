@@ -14,7 +14,7 @@ function App() {
   //third -> comma separated dependency list 
 
   //varition-1
-  //runs on every render
+  //runs on every render runs2 times becuae of the react render two time in starting
   // useEffect( ()=>{
   //   alert("i will run on every render on repaint")
   // })
@@ -39,9 +39,16 @@ function App() {
 
   //Variation -5
   //adding a clean up function
-  useEffect( ()=>{
-    alert("Count is updated")
-  })
+
+  
+// useEffect(() => {
+//   // Code to run (effect)
+  
+//   return () => {
+//     // Optional cleanup code
+//   };
+// }, [dependencies]);
+  
   
   function handleclick(){
     setcount(count+1);

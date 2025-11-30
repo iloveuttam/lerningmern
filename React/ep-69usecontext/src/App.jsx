@@ -7,23 +7,23 @@ import { createContext } from 'react'
 // const UserContext = createContext();
 //step2:wrap all child inside a provider
 //step3:pass the value
-//step4:consumer me jake consume karlo
+//step4:consumer me jake consume karlo useContext() se
 
-const ThemeContext = createContext();
+const ThemeContext = createContext();  // creation of themecontext
 
 function App() {
   // const [user,setUser] =useState({name:"Uttam"});
   
-  const [theme,setTheme] = useState('light');
+  const [theme,setTheme] = useState('light'); // use state provide the varible and the value for themecontext
   
   return (
    
-       
-       <ThemeContext.Provider value={{theme,setTheme}}>
+  //use of ThemeContext created by the create context and made .Provider ,and include the child for acees the state or data  
+       <ThemeContext.Provider value={{theme,setTheme}}> 
           <div id='container' style={{backgroundColor:theme==='light'?"beige":"black"}}>
             <ChildA/>
           </div>
-        
+       
        </ThemeContext.Provider>
        
 

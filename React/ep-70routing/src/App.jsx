@@ -2,12 +2,18 @@ import './App.css'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './componets/Home';
 import Dashboard from './componets/Dashboard';
+import Courses from './componets/Courses';
+import Mocktest from './componets/Mocktest';
+import Report from './componets/Report';
+import Notfound from './Notfound';
 import About from './componets/About';
 import { useState } from 'react';
 import Navbar from './componets/Navbar';
+import Paramcomp from './componets/Paramcomp';
 
 
-const router = createBrowserRouter(
+
+const routervariable = createBrowserRouter(
   [
    {
      path:"/",
@@ -28,8 +34,31 @@ const router = createBrowserRouter(
      element: <div>
         <Navbar/>
         <Dashboard/>
-     </div>,   
+     </div>,
+     children:[
+      { path:'courses',
+        element:<Courses/>
+      }, 
+      {path:'mocktest',
+        element:<Mocktest/>
+      },
+      {path:'report',
+        element:<Report/>
+      },
+     ]   
    },
+   {
+    path:'*',
+    element:<Notfound/>
+   },
+   {
+    path:"/student/:id",
+    element: <div>
+        <Navbar/>
+        <Paramcomp/>
+     </div>,  
+
+   }
   ]
 );
 
@@ -39,7 +68,7 @@ function App() {
 
   return (
     <div>
-       <RouterProvider router={router}/>
+       <RouterProvider router={routervariable}/>
     </div>
   )
 }

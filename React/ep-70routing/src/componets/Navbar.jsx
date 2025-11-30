@@ -10,14 +10,14 @@ const Navbar = () => {
         <ul id='navbar'>
             <li>
                 <NavLink to="/" className={( {isActive})=> isActive? "active-link": ""}>
-                 Home
+                 Home using navlink give the active class
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" className={( {isActive})=> isActive? "active-link": ""}>About</NavLink>
             </li>
             <li>
-                 <NavLink to ="/dashboard">Dashboard</NavLink>
+                 <NavLink to ="/dashboard" className={( {isActive})=> isActive? "active-link": ""}>Dashboard</NavLink>
             </li>
         </ul>
       

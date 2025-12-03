@@ -22,15 +22,6 @@ function App() {
   }
 
 
-
-
-
-
-
-
-
-
-
   // const [count, setCount] = useState(0);
   // // let val=0; simple val variable not persits it data  val = val+1;
   // let val = useRef(0);
@@ -57,15 +48,6 @@ function App() {
          <button onClick={starttimer}>Start</button> <br/>
          <button onClick={stoptimer}>Stop</button> <br/>
          <button onClick={resettimer}>Reset</button> <br/>
-
-
-
-
-
-
-
-
-
 
 
           {/* <button ref={btnref} onClick={handleIncrement}>Increment</button>

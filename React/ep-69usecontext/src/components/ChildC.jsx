@@ -3,7 +3,7 @@ import React ,{ useContext } from 'react';
 import { ThemeContext } from '../App';
 
 
-//after import the Themecontext now childc uses the state in the Parent App.jsx
+//after import the Themecontext now childc uses the state from the Parent App.jsx
 const ChildC = () => {
    const {theme,setTheme} = useContext( ThemeContext ) ;
    function toggleTheme(){

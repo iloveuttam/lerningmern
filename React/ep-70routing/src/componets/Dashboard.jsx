@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import courses from './courses'
+import courses from './Course'
 
 const Dashboard = () => {
   return (

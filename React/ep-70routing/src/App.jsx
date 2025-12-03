@@ -2,7 +2,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './componets/Home';
 import Dashboard from './componets/Dashboard';
-import Courses from './componets/Courses';
+import Course from './componets/Course'
 import Mocktest from './componets/Mocktest';
 import Report from './componets/Report';
 import Notfound from './Notfound';
@@ -37,7 +37,7 @@ const routervariable = createBrowserRouter(
      </div>,
      children:[
       { path:'courses',
-        element:<Courses/>
+        element:<Course/>
       }, 
       {path:'mocktest',
         element:<Mocktest/>
